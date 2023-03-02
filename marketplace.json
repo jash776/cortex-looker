@@ -9,22 +9,25 @@
   "constants": {
     "CONNECTION_NAME": {
       "label": "Connection Name",
-      "value_constraint": "connection"
+      "value_constraint": "sap_cortex"
     },
     "GCP_PROJECT": {
-      "label": "GCP Project Name"
+      "label": "GCP Project Name",
+      "value_constraint": "mw-da-demo"
     },
     "REPORTING_DATASET": {
-      "label": "Reporting Dataset Name"
+      "label": "Reporting Dataset Name",
+      "value_constraint": "sap_cortex_reporting_views"
     },
      "CLIENT": {
-      "label": "SAP Client ID"
+      "label": "SAP Client ID",
+      "value_constraint": "100"
     }  
   },
       "models": [
         {
             "name": "cortex_sap_operational",
-            "connection_constant": "CONNECTION_NAME"
+            "connection_constant": "sap_cortex"
         }
     ]
   
